@@ -84,11 +84,11 @@ button {
   /* border-radius: 40px; */
   border-radius: 10px;
   /* background-color: rgb(16, 160, 85); */
-  background-color: rgb(75, 166, 197);
+  background-color: rgb(48, 91, 185);
 }
 
 button:hover {
-  background-color: rgb(48, 91, 185);
+  background-color: rgb(75, 166, 197);
 }
 ul li {
   list-style: none;
