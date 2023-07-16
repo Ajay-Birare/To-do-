@@ -62,3 +62,18 @@ function showList() {
 }
 
 showList();
+
+// conainter > todo app -> row
+// dark mode
+
+function change() {
+  let conainter = document.querySelector(".container");
+  let todo = document.querySelector(".todo-app");
+  let input = document.querySelector("#input-box");
+  let dark = document.querySelector(".darkmode");
+
+  conainter.classList.toggle("color");
+  todo.classList.toggle("todoApp");
+  input.classList.toggle("input");
+  dark.classList.toggle("darkmodeImg");
+}

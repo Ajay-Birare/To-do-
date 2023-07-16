@@ -16,6 +16,12 @@ html {
   background-color: rgb(69, 120, 207);
   padding: 10px;
   backdrop-filter: blur(100px);
+  transition: all 0.5s;
+}
+img {
+  transition: all 3s;
+  float: right;
+  margin-right: 5%;
 }
 
 .todo-app {
@@ -28,6 +34,7 @@ html {
   padding: 40px 30px 70px;
   border-radius: 10px;
   box-shadow: 5px 20px 50px 1px black;
+  transition: all 0.5s;
 }
 
 .todo-app h2 {
@@ -149,4 +156,25 @@ li {
 li:hover {
   background-color: rgb(176, 201, 239);
   box-shadow: 2px 1px 5px 1px black;
+}
+
+/* ----------------------- */
+.color {
+  background-color: rgb(22, 12, 31);
+}
+
+.todoApp {
+  background-color: white;
+}
+.input {
+  border: 1px solid black;
+}
+
+.darkmode {
+  height: 50px;
+}
+
+.darkmodeImg {
+  content: url("images/switch-on.png");
+  height: 50px;
 }
