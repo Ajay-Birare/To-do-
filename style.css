@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(69, 120, 207);
+  padding: 10px;
+  backdrop-filter: blur(100px);
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  /* background-color: rgb(224, 162, 162); */
+  /* background-color: white; */
+  margin: 100px auto 20px;
+  background-color: rgb(90, 131, 197);
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px 1px black;
+}
+
+.todo-app h2 {
+  display: flex;
+  /* color: red; */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 8px white;
+  /* font-family: "Roboto Mono", monospace; */
+}
+.todo-app h2 img {
+  width: 50px;
+  margin-left: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(205, 229, 230);
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-weight: 14px;
+  padding: 10px;
+}
+::placeholder {
+  color: black;
+}
+.row:hover {
+  /* background-color: rgb(29, 135, 164); */
+}
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  color: white;
+  cursor: pointer;
+  border-radius: 40px;
+  /* background-color: rgb(16, 160, 85); */
+  background-color: rgb(75, 166, 197);
+}
+
+button:hover {
+  background-color: rgb(48, 91, 185);
+}
+ul li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-image: url("images/bx-checkbox.svg");
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+.checked {
+  /* color: red; */
+  text-decoration: line-through;
+  opacity: 0.4;
+  background-color: rgb(116, 141, 204);
+}
+
+.checked::before {
+  background-image: url("images/bxs-checkbox-checked\ \(1\).svg");
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  /* color: black; */
+  line-height: 40px;
+  text-align: center;
+}
+ul li span:hover {
+  border-radius: 10%;
+  background-color: rgb(153, 191, 232);
+}
+li {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  margin: 5px;
+  background-color: rgb(147, 177, 224);
+  transition: all 0.3s;
+}
+li:hover {
+  background-color: rgb(176, 201, 239);
+  box-shadow: 2px 1px 5px 1px black;
+}

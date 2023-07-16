@@ -1,0 +1,14 @@
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+  .row {
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: white;
+  }
+  input {
+    border: 1px solid black;
+  }
+}
